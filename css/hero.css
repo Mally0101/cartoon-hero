@@ -67,26 +67,51 @@ a{color: black
 }
 
 .table {
-	display: table;   /* Allow the centering to work */
+	display: center;   /* Allow the centering to work */
 	margin: 0 auto;
+	min-width: 800px;
+	background-color: white;
 }
 
 ul#horizontal-list {
-	min-width: 696px;
+	min-width: 999px;
 	list-style: none;
 	padding-top: 18px;
 	}
 	ul#horizontal-list li {
 		display: inline;
+		list-style: none;
+		margin-left: +1em; 
+		margin: 2 auto;
 	}
-
-
-
 
  /* End List*/ 
 
 
- footer { 
+ 	/* Zoom Funktion----------------------------*/ 
+
+ 	* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  padding: 0px;
+  background-color: green;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/* ------------------------------------------*/
+
+footer { 
  	max-width: 800px;
  	
 	margin: 0 auto;
